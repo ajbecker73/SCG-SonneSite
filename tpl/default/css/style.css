@@ -1,0 +1,12 @@
+@import url('../../../css/reset.css');
+@import url('bootstrap-theme.css');
+@import url('../../../css/bootstrap-glyphicons.css');
+@import url('../../../css/docs.css');
+@import url('../../../css/font-awesome/css/font-awesome.min.css');
+@import url('../../../css/social-buttons.css');
+/* DO NOT REMOVE OR CHANGE ABOVE THIS LINE 
+************************************************/
+.page{
+	padding:0;
+	margin:0;
+}

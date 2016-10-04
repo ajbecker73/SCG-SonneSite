@@ -1,0 +1,139 @@
+@import url('../../../css/ie8.css');
+@import url('../../../css/bootstrap-glyphicons.css');
+@import url('../../../css/docs.css');
+@import url('../../../css/font-awesome/css/font-awesome.min.css');
+/* DO NOT REMOVE OR CHANGE ABOVE THIS LINE 
+************************************************/
+
+
+
+
+/*fix to make dropdowns activate on hover
+******************************************/
+ul.nav li.dropdown:hover ul.dropdown-menu {
+	display: block;
+	margin:-3px 0 0 0;
+	border-top:none;
+}
+a.menu:after, .dropdown-toggle:after {
+	content: none;
+}
+/*****************************************/
+.page{
+	padding:1%;
+	margin:0px 0 0 0;
+}
+.adminBar{
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:9999;
+}
+ul.adminNav li a{
+	font-size:12px !important;
+}
+.adminPage{
+	width:95%;
+	padding:20px 10px 10px 0;
+	margin:-18px auto 0 auto;
+	border:1px solid #666;
+	border-top:none;
+	border-radius:0 0 10px 10px;
+	-moz-border-radius:0 0 10px 10px;
+	-webkit-border-radius:0 0 10px 10px;
+	box-shadow:0px 0px 10px 3px #ccc;
+	-moz-box-shadow:0px 0px 10px 3px #ccc;
+	-webkit-box-shadow:0px 0px 10px 3px #ccc;
+	background-color:#fff;
+}
+.social{
+	text-align:center;
+	margin:10px;
+}
+.social img{
+	width:30px;
+}
+.debugger{
+	position:fixed;
+	bottom:0;
+	background-color:#333;
+	color:#fff;
+	font-family:Tahoma, Geneva, sans-serif;
+	padding:5px 10px;
+	margin:0;
+	height:20px;
+	line-height:20px;
+	overflow:hidden;
+	box-shadow:0px 0px 10px 3px #000;
+	-moz-box-shadow:0px 0px 10px 3px #000;
+	-webkit-box-shadow:0px 0px 10px 3px #000;
+	border-top:1px solid #666;
+	z-index:9999;
+}
+.debugger h3{
+	margin:0 0 20px 0;
+	font-size:18px;
+	line-height:20px;
+}
+.debugger a{
+	float:right;
+	margin:0 20px 0 0;
+	font-size:14px;
+	color:#006;
+}
+.theme-thumb{
+	border:1px solid #ccc;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	width:150px;
+	padding:10px;
+	text-align:center;
+	margin:0 10px 10px 0;
+}
+.theme-thumb-active{
+	border:1px solid #ccc;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	width:150px;
+	padding:10px;
+	text-align:center;
+	margin:0 10px 10px 0;
+	background-color:#FFC;
+}
+.theme-thumb img{
+	width:130px;
+	height:100px;
+}
+table.calendar{
+	background-color:#F4F4F4;
+}
+td.cal_heading{
+	border:1px solid #ECEEFD;
+	text-align:center;
+	line-height:16px;
+	font-size:12px;
+	font-weight:bold;
+	background-color:#4446AC;
+	color:#fff;
+}
+b.cal_title{
+	font-size:10px;
+}
+td.cal_cell{
+	height:97px;
+	width:97px;
+	border:1px solid #ECEEFD;
+}
+.rowSelected{
+	background-color:#ECEEFD;
+}
+td.cal_cell.active{
+	background-color:#33C;
+}
+.cal_cell_content{
+	margin:0;
+	height:100%;
+	background-color:#ECEEFD;
+}
