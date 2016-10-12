@@ -63,25 +63,29 @@ class App {
 					}
 				}
 			}
-			if(!is_array($CC)){
-				$this->LMGMail->addCC($CC, '');
-			}else{
-				for($e=0;$e<count($CC);$e++){
-					if(is_array($CC[$e])){
-						$this->LMGMail->addCC($CC[$e][0], $CC[$e][1]);
-					}else{
-						$this->LMGMail->addCC($CC[$e], '');
+			if($CC != ''){
+				if(!is_array($CC)){
+					$this->LMGMail->addCC($CC, '');
+				}else{
+					for($e=0;$e<count($CC);$e++){
+						if(is_array($CC[$e])){
+							$this->LMGMail->addCC($CC[$e][0], $CC[$e][1]);
+						}else{
+							$this->LMGMail->addCC($CC[$e], '');
+						}
 					}
 				}
 			}
-			if(!is_array($BCC)){
-				$this->LMGMail->addBCC($BCC, '');
-			}else{
-				for($e=0;$e<count($BCC);$e++){
-					if(is_array($BCC[$e])){
-						$this->LMGMail->addBCC($BCC[$e][0], $BCC[$e][1]);
-					}else{
-						$this->LMGMail->addBCC($BCC[$e], '');
+			if($BCC != ''){
+				if(!is_array($BCC)){
+					$this->LMGMail->addBCC($BCC, '');
+				}else{
+					for($e=0;$e<count($BCC);$e++){
+						if(is_array($BCC[$e])){
+							$this->LMGMail->addBCC($BCC[$e][0], $BCC[$e][1]);
+						}else{
+							$this->LMGMail->addBCC($BCC[$e], '');
+						}
 					}
 				}
 			}
